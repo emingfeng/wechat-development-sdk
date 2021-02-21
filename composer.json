@@ -1,0 +1,36 @@
+{
+  "type": "library",
+  "name": "emingfeng/wechat-development-sdk",
+  "homepage": "https://github.com/emingfeng/wechat-development-sdk",
+  "description": "Wechat Development SDK",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andy",
+      "email": "16180631@qq.com",
+      "homepage": "https://www.emingfeng.com"
+    }
+  ],
+  "keywords": [
+    "WeChat",
+    "WeChatOpen",
+    "WeChatDevelopment",
+    "Wechat Pay"
+  ],
+  "require": {
+    "php": ">=5.6",
+    "ext-xml": "*",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-bcmath": "*",
+    "ext-libxml": "*",
+    "ext-openssl": "*",
+    "ext-mbstring": "*",
+    "ext-simplexml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "eMingFeng\\" : "src"
+    }
+  }
+}
