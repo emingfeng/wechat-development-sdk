@@ -33,7 +33,7 @@ class UserClient extends BaseClient
     public function get(string $openid, string $lang = 'zh_CN')
     {
         $url = "https://api.weixin.qq.com/cgi-bin/user/info?access_token=ACCESS_TOKEN&openid={$openid}&lang={$lang}";
-        return $this->httpGetForJson($url);
+        return $this->callGetApi($url);
     }
 
     /**

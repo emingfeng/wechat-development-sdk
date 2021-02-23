@@ -80,7 +80,7 @@ class Client extends BaseClient
      */
     public function createPreAuthCode()
     {
-        $componentAccessToken = $this->getCAT();
+        $componentAccessToken = $this->getComponentAccessToken();
         $url = "https://api.weixin.qq.com/cgi-bin/component/api_create_preauthcode?component_access_token={$componentAccessToken}";
         $params = ['component_appid' => $this->config->get('component_appid')];
         $result = $this->httpPostForJson($url, $params);
