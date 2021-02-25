@@ -35,9 +35,9 @@ composer update emignfeng/wechat-development-sdk
 --
 >推荐使用 phpstorm 进行编写应用  
 >
-[文档](https://emingfeng.com/docs/wechat-development-sdk)  
+[文档](https://www.emingfeng.com/docs/wechat-development-sdk)  
 
-[教程](https://emingfeng.com/guide/wechat-development-sdk)  
+[教程](https://www.emingfeng.com/guide/wechat-development-sdk)  
 
 版权
 --
