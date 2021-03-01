@@ -33,10 +33,10 @@ class Client extends BaseClient
      */
     public function createTemp($sceneValue, $expireSeconds){
         if (is_int($sceneValue) && $sceneValue > 0 && $sceneValue < 100000) {
-            $actionName = "QR_LIMIT_SCENE";
+            $actionName = "QR_SCENE";
             $sceneKey = 'scene_id';
         } else {
-            $actionName = "QR_LIMIT_STR_SCENE";
+            $actionName = "QR_STR_SCENE";
             $sceneKey = 'scene_str';
         }
 
@@ -64,10 +64,10 @@ class Client extends BaseClient
     public function createNever($sceneValue){
 
         if (is_int($sceneValue) && $sceneValue > 0) {
-            $actionName = "QR_SCENE";
+            $actionName = "QR_LIMIT_SCENE";
             $sceneKey = 'scene_id';
         } else {
-            $actionName = "QR_STR_SCENE";
+            $actionName = "QR_LIMIT_STR_SCENE";
             $sceneKey = 'scene_str';
         }
         $scene = [$sceneKey => $sceneValue];
